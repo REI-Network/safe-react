@@ -6,7 +6,6 @@ import { Redirect, Route, Switch, useLocation } from 'react-router-dom'
 import { LoadingContainer } from 'src/components/LoaderContainer'
 import { lastViewedSafe } from 'src/logic/currentSession/store/selectors'
 import {
-  generateSafeRoute,
   LOAD_SPECIFIC_SAFE_ROUTE,
   OPEN_SAFE_ROUTE,
   ADDRESSED_ROUTE,
@@ -18,11 +17,12 @@ import {
   HOME_ROUTE,
   SAFE_ROUTES,
   GENERIC_APPS_ROUTE,
+  generateSafeRoute,
 } from './routes'
-import { getShortName } from 'src/config'
 import { setChainId } from 'src/logic/config/utils'
 import { setChainIdFromUrl } from 'src/utils/history'
 import { usePageTracking } from 'src/utils/googleTagManager'
+import { getShortName } from 'src/config'
 
 const Home = React.lazy(() => import('./Home'))
 const Welcome = React.lazy(() => import('./welcome/Welcome'))
