@@ -15,7 +15,7 @@
     "name": "Gnosis Team",
     "email": "safe@gnosis.io"
   },
-  "homepage": "/app",
+  "homepage": "/",
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "build": "cross-env REACT_APP_APP_VERSION=$npm_package_version rescripts --max-old-space-size=8192 build",
@@ -87,7 +87,7 @@
     "@gnosis.pm/safe-apps-sdk": "7.3.0",
     "@gnosis.pm/safe-apps-sdk-v1": "npm:@gnosis.pm/safe-apps-sdk@0.4.2",
     "@gnosis.pm/safe-core-sdk": "^2.0.0",
-    "@gnosis.pm/safe-deployments": "^1.8.0",
+    "@gnosis.pm/safe-deployments": "^1.12.0",
     "@gnosis.pm/safe-react-components": "^1.1.2",
     "@gnosis.pm/safe-react-gateway-sdk": "^2.10.2",
     "@gnosis.pm/safe-web3-lib": "^1.0.0",
