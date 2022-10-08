@@ -1,4 +1,4 @@
-import { createBrowserHistory } from 'history'
+import { createHashHistory } from 'history'
 import { generatePath, matchPath } from 'react-router-dom'
 
 import { getChains } from 'src/config/cache/chains'
@@ -7,7 +7,7 @@ import { checksumAddress } from 'src/utils/checksumAddress'
 import { PUBLIC_URL } from 'src/utils/constants'
 import { parsePrefixedAddress } from 'src/utils/prefixedAddress'
 
-export const history = createBrowserHistory({
+export const history = createHashHistory({
   basename: PUBLIC_URL,
 })
 
